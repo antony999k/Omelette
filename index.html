@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/png" href="./src/imgs/favicon.png"/>
+  <link rel="stylesheet" href="./css/SuperResete.css">
+  <link rel="stylesheet" href="./css/firefly.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/animate.css">
+  <script type="text/javascript" src="./src/js/loader.js"></script>
+  <script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', function() {
+        QueryLoader2(document.querySelector("body"), {
+            barColor: "#363636",
+            backgroundColor: "#fac51f",
+            percentage: true,
+            barHeight: 0,
+            minimumTime: 500,
+            fadeOutTime: 1000,
+        });
+        document.getElementById('qLpercentage').style.fontWeight = "900";
+    });
+</script>
+  <title>Omelette</title>
+</head>
+<body>
+
+  <div class="content">
+    <img src="./src/imgs/icons/goToTopIcon.png" alt="Top" id="goToTop" class="scrollToTop">
+
+    <section id="" class="carouselWrapper">
+
+    <div class="siema">
+      <div class="unoC carouselSlide">
+        <h1 class="white">WE CREATE CONCEPTS</h1>
+      </div>
+      <div class="dosC carouselSlide">
+        <h1 class="white"></h1>
+      </div>
+      <div class="carouselSlide tresC">
+        <h1 class="white"></h1>
+      </div>
+      <div class="carouselSlide cuatroC">
+        <h1 class="white">WE TELL AMAZING<br>STORIES</h1>
+      </div>
+
+      <div class="carouselSlide cincoC">
+        <h1 class="white">WE ARE LIFESTYLE</h1>
+      </div>
+    </div>
+
+
+      <div class="carouselNav fy-row fy-row-centerMid">
+        <div class="carouselNavController fy-row">
+          <a><img src="./src/imgs/icons/leftArrow.png" alt="Prev" class="prevC"></a>
+          <div class="numContainer" id="carouselNavIndex">
+            <!-- ************************************************************************
+            ****************************** Numeros *************************************
+            **************************************************************************** -->
+          </div>
+          <a><img src="./src/imgs/icons/rightArrow.png" alt="Next" class="nextC"></a>
+
+        </div>
+        <div class="redesSociales">
+          <a href=""><img src="./src/imgs/icons/fbgrey.png" alt="facebook" ></a>
+          <a href=""><img src="./src/imgs/icons/ttgrey.png" alt="twitter"></a>
+          <a href=""><img src="./src/imgs/icons/pintgrey.png" alt="printerest"></a>
+        </div>
+      </div>
+
+      <div id="menumain" class="menumain fy-row fy-row-centerVertical">
+        <img class="omeletteLogo" src="./src/imgs/logos/omelettelogo.png" alt="Omelette Media">
+        <div class="redesSociales" id="menumainRedesSociales">
+          <a href=""><img src="./src/imgs/icons/fb.png" alt="facebook" class="menuADerRedesSocialesImg"></a>
+          <a href=""><img src="./src/imgs/icons/tt.png" alt="twitter" class="menuADerRedesSocialesImg"></a>
+          <a href=""><img src="./src/imgs/icons/pint.png" alt="printerest" class="menuADerRedesSocialesImg"></a>
+        </div>
+        <div class="menumainIcon fy-row fy-row-centerMid">
+          <a onclick="openMenuAAnimation()"><img src="./src/imgs/icons/MenuStrokes.png" alt="menu"></a>
+        </div>
+      </div>
+    </section>
+
+
+    <div id="menuAOpenAnimationIzq"></div><div id="menuAOpenAnimationDer"></div>
+
+    <section id="menuA">
+      <a onclick="closeMenuA()"><img src="./src/imgs/icons/closeBlack.png" alt="close" class="closeBlack" id="closeBlack"></a>
+
+      <div class="menuA fy-row fy-container-xl" id="menuAA">
+
+        <div class="menuAIzq menuAFadeIn" id="menuAIzq">
+          <div class="menuAIzqContainer">
+            <h2 class="menuAIzqContainerTitle">OMELETTE<br>MEDIA</h2>
+            <p class="menuAIzqContainerP1">Agencia creativa la cual busca elevar el estándar de calidad y creatividad en publicidad y medios digitales</p>
+            <p class="menuAIzqContainerP2">Conoce a nuestros partners</p>
+            <div class="menuAIzqPartners">
+              <img src="./src/imgs/logos/complitlogo.png" alt="Complit">
+              <img src="./src/imgs/logos/vrfrontierlogo.png" alt="VR Frontier">
+            </div>
+          </div>
+        </div>
+
+        <div class="menuADerContainer">
+
+        </div>
+        <div class="menuADer menuAFadeIn" id="menuADer">
+          <img src="./src/imgs/logos/logo.png" alt="Omelette Media" class="menuADerLogo">
+          <ul>
+            <a id="quieneSomosBtn"><li>Quiénes somos</li></a>
+            <a id="queHacemosBtn"><li>Qué hacemos</li></a>
+            <a id="clientesBtn"><li>Nuestros clientes</li></a>
+            <a onclick="openMenuB()"><li>Portafolio</li></a>
+            <a id="contactoBtn"><li>Contacto</li></a>
+          </ul>
+          <div class="menuADerRedesSociales">
+            <img src="./src/imgs/icons/fb.png" alt="facebook" >
+            <img src="./src/imgs/icons/tt.png" alt="twitter" >
+            <img src="./src/imgs/icons/pint.png" alt="printerest">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="menuBIzq" class="hiddenMenuB">
+      <a onclick="closeMenuB()" id="closeMenuB"><img src="./src/imgs/icons/closeYellow.png" alt="close" class="closeYellow"></a>
+
+      <div class="menuBIzq fy-rowVertical fy-row-centerMid">
+        <div class="menuBIzqServiciosContainer fy-row-centerVertical fy-row-centerMid">
+
+          <div class="menuBIzqServicios">
+            <a onclick="openPortfolioFoto()"><h2 class="hMenu yellow">REDES SOCIALES</h2></a>
+            <a onclick="openPortfolioFoto()"><img class="portafolioIcon" src="./src/imgs/portfolioIcons/redes.png" alt="Cámara"></a>
+          </div>
+
+          <div class="menuBIzqServicios">
+            <a onclick="openPortfolioFoto()"><h2 class="hMenu yellow">FOTOGRAFÍA</h2></a>
+            <a onclick="openPortfolioFoto()"><img class="portafolioIcon" src="./src/imgs/portfolioIcons/foto.png" alt="Cámara"></a>
+          </div>
+
+          <div class="menuBIzqServicios big">
+            <a onclick="openPortfolioFoto()"><h2 class="hMenu yellow">VIDEO</h2></a>
+            <a onclick="openPortfolioFoto()"><img class="portafolioIcon" src="./src/imgs/portfolioIcons/video.png" alt="Cámara"></a>
+          </div>
+
+        </div>
+        <div class="scrollMouse" id="scrollMouse">
+          <p class="yellow">SCROLL</p>
+          <img src="./src/imgs/icons/mouse.png" alt="Scroll">
+        </div>
+      </div>
+
+
+    </section>
+
+    <section id="portfolio">
+      <a onclick="closePortfolioFoto()"><img src="./src/imgs/icons/closeYellow.png" alt="close" class="closeYellow"></a>
+      <div class="portfolio fy-container-xl">
+        <div class="portfolioGaleria fy-row">
+
+          <div class="portfolioGaleriaFoto" onclick="openPortfolioSingle()">
+          </div>
+
+          <div class="portfolioGaleriaFoto" onclick="openPortfolioSingle()">
+          </div>
+
+          <div class="portfolioGaleriaFoto" onclick="openPortfolioSingle()">
+          </div>
+
+          <div class="portfolioGaleriaFoto" onclick="openPortfolioSingle()">
+          </div>
+
+          <div class="portfolioGaleriaFoto" onclick="openPortfolioSingle()">
+          </div>
+
+          <div class="portfolioGaleriaFoto" onclick="openPortfolioSingle()">
+          </div>
+
+          <div class="portfolioGaleriaFoto" onclick="openPortfolioSingle()">
+          </div>
+
+          <div class="portfolioGaleriaFoto" onclick="openPortfolioSingle()">
+          </div>
+
+          <div class="portfolioGaleriaFoto" onclick="openPortfolioSingle()">
+          </div>
+        </div>
+
+
+        <div class="carouselNavController fy-row">
+          <a><img src="./src/imgs/icons/leftArrow.png" alt="Prev" class="prevC"></a>
+          <div class="numContainer" id="carouselNavIndex">
+            <a class="num" onclick="">1</a>
+            <a class="num" onclick="">2</a>
+            <a class="num" onclick="">3</a>
+            <a class="num" onclick="">4</a>
+            <a class="num" onclick="">5</a>
+          </div>
+          <a><img src="./src/imgs/icons/rightArrow.png" alt="Next" class="nextC"></a>
+
+        </div>
+
+
+      </div>
+    </section>
+
+    <section id="portfolioSingle">
+      <div class="portfolioSingle">
+        <a onclick="closePortfolioSingle()"><img src="./src/imgs/icons/closeYellow.png" alt="close" class="portfolioSinglecloseYellow"></a>
+      </div>
+    </section>
+
+
+
+    <section id="quienesSomos" class="homeSlide homeSlideTall">
+        <div class="bcg"
+            data-bottom-top="background-position: 50% 0px;"
+            data-center="background-position: 50% -100px;"
+            data-top-bottom="background-position: 50% -200px;"
+            data-anchor-target="#quienesSomos">
+            <div class="quienesSomosContainer">
+                <div class="copy fy-container-xl fy-rowVertical fy-row-centerHorizontal"
+
+                    data-400-top="opacity: 0;"
+                    data-0-top="opacity: 1;"
+                    data-anchor-target="#quienesSomos .copy"
+                >
+                  <h2 class="white quienesSomosTitle">MAKE IT<br>LOOK<span> AWESOME</span></h2>
+                  <p class="white quienesSomosP1">Omelette Media es una agencia creativa con hambre de ideas que impulsen, mezclen y creen el contenido original que tu empresa necesita. Somos una combinación perfecta de ingredientes que van desde fotografías 1:1 hasta videos con drone que dan flexibilidad, sazón e identidad a tu marca. Estrellamos lo viejo y cocinamos lo nuevo.</p>
+                  <button id="portafolio" onclick="goToPorfolio()">PORTAFOLIO</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="servicios">
+      <div class="servicios">
+        <div class="serviciosTop pop slideInLeft">
+          <h2>SERVICES FOR<br>YOUR NEEDS</h2>
+        </div>
+        <div class="serviciosBottom pop fadeInUp" data-pop-delay="0.3s">
+          <p>En <span>Omelette Media</span> dejamos tu mesa bien servida, somos una mezcla de ideas, herramientas, técnicas y creatividad, haciendo del contenido digital un sello distintivo y una ventaja diferencial en el mercado. Creamos contenido picante de acuerdo con la identidad de tu marca y definimos un estilo en ella para redes sociales</p>
+          <img src="./src/imgs/icons/arrow.png" alt="Flecha" class="arrow2">
+        </div>
+      </div>
+    </section>
+
+    <section id="serviciosEspecificos">
+      <div class="serviciosEspecificos">
+
+        <div class="fy-row flexDirec">
+          <div class="serviciosEspecificosFoto servicioEspecifico">
+            <div class="servicioEspecificoHover"></div>
+            <div class="servicioEspecificoTitulo fy-rowVertical fy-row-centerHorizontal pop slideInLeft">
+              <div class="fy-row fy-row-centerVertical">
+                <h3 class="yellow">FOTOGRAFÍA</h3>
+                <img src="./src/imgs/icons/arrow.png" alt="Flecha" class="arrow">
+              </div>
+              <p class="white">Foto de producto - Foto editorial - Fotografía de arquitectura - Foto de moda - Fotografía de comida</p>
+              <img src="./src/imgs/icons/arrow.png" alt="Flecha" class="arrow2">
+            </div>
+          </div>
+
+          <div class="serviciosEspecificosVideo servicioEspecifico">
+            <div class="servicioEspecificoHover"></div>
+            <div class="servicioEspecificoTitulo fy-rowVertical fy-row-centerHorizontal pop slideInRight">
+              <div class="fy-row fy-row-centerVertical">
+                <h3 class="yellow">VIDEO</h3>
+                <img src="./src/imgs/icons/arrow.png" alt="Flecha" class="arrow">
+              </div>
+              <p class="white">Video corporativo - Video promocional - Video informativo - Video documental - Video de  entretenimiento (bodas, viajes, música, Vlogs, etc)</p>
+              <img src="./src/imgs/icons/arrow.png" alt="Flecha" class="arrow2">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="serviciosEspecificosRedes servicioEspecifico">
+          <div class="servicioEspecificoHover full"></div>
+          <div class="servicioEspecificoTitulo fy-rowVertical fy-row-centerHorizontal pop slideInLeft">
+            <div class="fy-row fy-row-centerVertical">
+              <h3 class="yellow">REDES SOCIALES</h3>
+              <img src="./src/imgs/icons/arrow.png" alt="Flecha" class="arrow">
+            </div>
+            <p class="white">- Planes de marketing digital - Creación de contenido targeteado - Pautas y promociones en redes</p>
+            <img src="./src/imgs/icons/arrow.png" alt="Flecha" class="arrow2">
+          </div>
+        </div>
+
+        <div class="fy-row flexDirec">
+          <div class="serviciosEspecificosWebApps servicioEspecifico ">
+            <div class="servicioEspecificoHover"></div>
+            <div class="servicioEspecificoTitulo fy-rowVertical fy-row-centerHorizontal pop slideInLeft">
+              <div class="fy-row fy-row-centerVertical">
+                <h3 class="yellow">WEB Y APPS</h3>
+                <img src="./src/imgs/icons/arrow.png" alt="Flecha" class="arrow">
+              </div>
+              <p class="white">Sistemas Web a la medida - Aplicaciones móviles nativas e híbridas - Páginas Web y Landing Pages - Visualización de datos - AI</p>
+              <img src="./src/imgs/icons/arrow.png" alt="Flecha" class="arrow2">
+            </div>
+          </div>
+
+          <div class="serviciosEspecificosVr servicioEspecifico">
+            <div class="servicioEspecificoHover"></div>
+            <div class="servicioEspecificoTitulo fy-rowVertical fy-row-centerHorizontal pop slideInRight">
+              <div class="fy-row fy-row-centerVertical">
+                <h3 class="yellow">VR</h3>
+                <img src="./src/imgs/icons/arrow.png" alt="Flecha" class="arrow">
+              </div>
+              <p class="white">Creación de contenido - Diseño de visores - Software de manipulación de renders - Experiencias VR. </p>
+              <img src="./src/imgs/icons/arrow.png" alt="Flecha" class="arrow2">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="clientes">
+      <div class="clientes fy-container-xl">
+        <div class="clientesText pop slideInLeft">
+          <h2 class="white clientesTitle">CUSTOMERS AND<br>THEIR <span>IDEAS</span></h2>
+          <p class="white clientesP1">Sabemos que un omelette se puede hacer y acompañar de diversas formas y estilos, por lo que prometemos respetar tu marca y vivir tu esencia creando experiencias únicas con proyectos gustosos basados en branding y una excelente presencia en redes capaces de crear lealtad hacia tu marca, fans, y acercamiento de clientes potenciales, así como comunicación y retención de clientes actuales amantes de tu sabor.</p>
+        </div>
+
+        <div class="clientesTable fy-row pop zoomIn">
+          <div class="clientesTableCuadro">
+            <span class="clientesTableCuadroHelper"></span><img src="./src/imgs/logos/aston.png" alt="Aston Martin">
+          </div>
+
+          <div class="clientesTableCuadro">
+            <span class="clientesTableCuadroHelper"></span><img src="./src/imgs/logos/beachweaver.png" alt="Beach Weaver">
+          </div>
+
+          <div class="clientesTableCuadro">
+            <span class="clientesTableCuadroHelper"></span><img src="./src/imgs/logos/98coastlogo.png" alt="98 Coast Logo">
+          </div>
+
+          <div class="clientesTableCuadro">
+            <span class="clientesTableCuadroHelper"></span><img src="./src/imgs/logos/sperry.png" alt="Sperry">
+          </div>
+
+          <div class="clientesTableCuadro">
+            <span class="clientesTableCuadroHelper"></span><img src="./src/imgs/logos/australia.png" alt="Australian Goverment" class="clientesTableCuadroBig">
+          </div>
+
+          <div class="clientesTableCuadro">
+            <span class="clientesTableCuadroHelper"></span><img src="./src/imgs/logos/swarovski.png" alt="swarovsky">
+          </div>
+
+          <div class="clientesTableCuadro">
+            <span class="clientesTableCuadroHelper"></span><img src="./src/imgs/logos/clicquotlogo.png" alt="Veueve">
+          </div>
+
+          <div class="clientesTableCuadro">
+            <span class="clientesTableCuadroHelper"></span><img src="./src/imgs/logos/guerlain.png" alt="Guerlain">
+          </div>
+
+          <div class="clientesTableCuadro">
+            <span class="clientesTableCuadroHelper"></span><img src="./src/imgs/logos/moramoralogo.png" alt="Mora mora" class="tableLogoMini">
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <section id="mail">
+      <div class="mail fy-row fy-container-xl flexDirec">
+
+        <div class="mailIzq fy-rowVertical pop bounceInUp">
+          <h2 class="white">DÉJANOS UN <br><span>MENSAJE</span></h2>
+          <p class="mailIzqP1">Escríbenos y  nos pondremos en contacto contigo.</p>
+          <p class="mailIzqP2">(55) 55 555 555<br>
+          Ciudad de México</p>
+        </div>
+
+        <form class="mailDer fy-rowVertical pop bounceInUp" data-pop-delay="0.5s">
+          <input type="text" placeholder="Nombre">
+          <input type="text" placeholder="Apellido">
+          <input type="email" placeholder="Correo">
+          <input type="text" placeholder="Compañía">
+          <textarea name="texto"></textarea>
+          <a onclick="mailCorrect()"><span id="mailButtonText">ENVIAR</span> <img src="./src/imgs/icons/spinner-of-dots.svg" alt="Loading" id="mailLoading" class="rotating"></a>
+
+        </form>
+      </div>
+    </section>
+
+    <div class="mailExito" id="mailExito">
+      <h4>Tu mensaje se envio exitosamente</h4>
+    </div>
+
+    <footer>
+      <img src="./src/imgs/logos/footer.png" alt="Omelette Media" class="footerIcon">
+      <div class="footer fy-container-xl">
+        <div class="footerTop fy-row flexDirec">
+          <div class="footerTopWeb">
+            <h4 class="footerTopTitle">WEBSITE</h4>
+            <ul>
+              <a id="quieneSomosBtn2"><li>quiénes somos</li></a>
+              <a id="queHacemosBtn2"><li>qué hacemos</li></a>
+              <a id="clientesBtn2"><li>nuestros clientes</li></a>
+              <a href="#"><li>portafolio</li></a>
+              <a id="contactoBtn2"><li>contacto</li></a>
+            </ul>
+          </div>
+          <div class="footerTopSocial">
+            <h4 class="footerTopTitle">SOCIAL</h4>
+            <ul>
+              <a href="#"><li>facebook</li></a>
+              <a href="#"><li>twitter</li></a>
+              <a href="#"><li>instagram</li></a>
+              <a href="#"><li>printest</li></a>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footerBottom fy-row fy-container-xl fy-row-centerMid flexDirec">
+        <div class="redesSociales">
+          <a href=""><img src="./src/imgs/icons/fb.png" alt="facebook"></a>
+          <a href=""><img src="./src/imgs/icons/tt.png" alt="twitter"></a>
+          <a href=""><img src="./src/imgs/icons/pint.png" alt="printerest"></a>
+        </div>
+        <p>@copyright 2017</p>
+      </div>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="./src/js/jquery-3.2.1.min.js"></script>
+  <script src="./src/js/siema.min.js"></script>
+  <script type="text/javascript" src="./src/js/omeletteJS.js"></script>
+  <script src="./src/js/skrollr.js"></script>
+  <script type="text/javascript" src="./src/js/pop.js"></script>
+  <script type="text/javascript">
+  if (screen.width>800){
+    var s = skrollr.init();
+  }
+	</script>
+  <script>new POP().init();</script>
+</body>
+</html>

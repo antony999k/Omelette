@@ -1,0 +1,1316 @@
+/*=============================================================
+Omelette Style
+Author: @Antony999k
+=============================================================*/
+
+/* Global
+---------------------------------------------------------------*/
+
+.redesSociales{
+  height: 25px;
+}
+
+.redesSociales img{
+  height: 100%;
+}
+
+.socialImage{
+  height: 0;
+  overflow: hidden;
+  -prefix-animation: slide 1s ease 3.5s forwards;
+}
+
+@-prefix-keyframes slide {
+  from {height: 0;}
+  to {height: 25px;}
+}
+
+
+.closeBlack,
+.closeYellow{
+  width: 35px;
+  position: absolute;
+  top: 50px;
+}
+
+.closeBlack{
+  right: 40px;
+}
+
+.closeYellow{
+  left: 40px;
+}
+
+.scrollMouse{
+  display: none;
+  text-align: center;
+  position: absolute;
+  bottom: 80px;
+  left: 40px;
+}
+
+.scrollMouse p{
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.scrollMouse img{
+  width: 25px;
+}
+
+#goToTop{
+  position: fixed;
+  bottom: 0;
+  left: 25px;
+  width: 40px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+
+/* ousousel
+---------------------------------------------------------------*/
+.carouselWrapper{
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+}
+
+.carousel{
+  width: 100vw;
+  height: 86%;
+  background-color: #fac51f;
+}
+
+.siema{
+  height: 86%;
+  background-color: grey;
+}
+
+.siema div{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.carouselSlide h1{
+  text-shadow: 2px 4px 5px rgba(17, 17, 17, 0.5);
+}
+
+.unoC{
+  background-image: url("../src/imgs/carousel/Carousel1.jpg");
+  background-position: initial;
+}
+
+.dosC{
+  background-image: url("../src/imgs/carousel/Carousel2.jpg");
+}
+
+.tresC{
+  background-image: url("../src/imgs/carousel/Carousel3.jpg");
+}
+
+.cuatroC{
+  background-image: url("../src/imgs/carousel/Carousel4.jpg");
+}
+
+.cincoC{
+  background-image: url("../src/imgs/carousel/Carousel5.jpg");
+}
+
+.carouselNav{
+  background-color: black;
+  width: 100vw;
+  height: 7%;
+  position: relative;
+}
+
+.carouselNav .redesSociales{
+  right: 40px;
+  bottom: 10px;
+  position: absolute;
+}
+
+.carouselNavController a img{
+  width: 7px;
+}
+
+.numContainer{
+  line-height: 1;
+}
+
+.numContainer .numC{
+  margin: 0 2px;
+}
+
+.numC.active{
+  font-weight: bold;
+}
+
+.carouselNavController .prevC{
+  margin-right: 10px;
+}
+
+.carouselNavController .nextC{
+  margin-left: 10px;
+}
+
+.carouselNavController a{
+  font-family: "DIN Alternate", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: #5c5c5c;
+}
+
+.carouselNavController a.active{
+  color: white;
+}
+
+/* Menu main
+---------------------------------------------------------------*/
+.menumain{
+  position: relative;
+  width: 100vw;
+  height: 7%;
+  background-color: #fac51f;
+  z-index: 2;
+}
+
+.menumain.menumainFixed{
+  position: fixed;
+  top: 0;
+}
+
+.menumain .omeletteLogo{
+  height: 45%;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.menumainIcon{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  width: 120px;
+  height: 100%;
+  background-color: black;
+}
+
+.menumainIcon a{
+  margin-top: 5px;
+}
+
+.menumainIcon img{
+  width: 25px;
+}
+
+#menumainRedesSociales{
+  transition: all 0.4s
+}
+/* Menu A Open Animation
+---------------------------------------------------------------*/
+#menuAOpenAnimationIzq,
+#menuAOpenAnimationDer{
+  position: fixed;
+  z-index: 3;
+  width: 50vw;
+  height: 100vh;
+  background-color: #fac51f;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.ButToT{
+  -webkit-animation-name: ButToT;
+  animation-name: ButToT;
+}
+
+.topToB{
+  -webkit-animation-name: topToB;
+  animation-name: topToB;
+}
+
+#menuAOpenAnimationIzq{
+  top: 100vh;
+}
+
+#menuAOpenAnimationDer{
+  left: 50vw;
+  top:-100vh;
+}
+
+@-webkit-keyframes topToB {
+    0%   {top:-100vh;}
+    100% {top:0;}
+}
+
+/* Standard syntax */
+@keyframes topToB {
+    0%   {top:-100vh;}
+    100% {top:0;}
+}
+
+@-webkit-keyframes ButToT {
+    0%   {top:100vh;}
+    100% {top:0;}
+}
+
+/* Standard syntax */
+@keyframes ButToT {
+    0%   {top:100vh;}
+    100% {top:0;}
+}
+
+.fadeInOut {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.fadeInOut.hidden {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 0.5s;
+    transition-property: all;
+}
+
+/* Menu A
+---------------------------------------------------------------*/
+#menuA{
+  z-index: 4;
+  padding-bottom: 80px;
+  position: fixed;
+  background-color: #fac51f;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  display: none;
+}
+
+.disableContainer{
+  padding: 0 !important;
+}
+
+.menuAIzq{
+  align-self: flex-end;
+  width: 70vw;
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.menuAIzqContainer{
+  width: 80%;
+}
+
+.menuAIzqContainerTitle{
+  margin-bottom: 30px;
+}
+
+.menuAIzqContainerP1{
+  margin-bottom: 60px;
+}
+
+.menuAIzqContainerP2{
+  margin-bottom: 20px
+}
+
+.menuAIzqContainer p{
+  font-weight: 600;
+  font-size: 18px;
+  color: #3e4244;
+}
+
+.menuAIzqPartners img{
+  width: 150px;
+  margin-right: 40px;
+}
+
+.menuAIzqPartners img:last-child{
+  margin: 0;
+}
+
+.menuADerContainer{
+  background-color: salmon;
+}
+
+.menuADer{
+  width: 30vw;
+  margin: 0 auto;
+  align-self: flex-end;
+  text-align: center;
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.menuADer.menuADerChiquito{
+  width: 25vw;
+}
+
+.menuADer.menuAFadeIn,
+.menuAIzq.menuAFadeIn{
+  opacity: 0;
+}
+
+.menuADerLogo{
+  width: 170px;
+  margin-bottom: 50px;
+}
+
+.menuADer ul{
+  margin-bottom: 70px;
+}
+
+.menuADer ul a{
+  color: #3e4244;
+  font-weight: bold;
+}
+
+.menuADerRedesSociales img{
+  width: 30px;
+}
+
+/* Menu B
+---------------------------------------------------------------*/
+#menuBIzq{
+  position: fixed;
+  background-color: black;
+  height: 100vh;
+  width: 70vw;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+#menuBIzq.hiddenMenuB{
+  width: 0vw;
+}
+
+.menuBIzq{
+  width: 100%;
+  height: 100%;
+}
+
+#closeMenuB{
+  display: none;
+}
+
+.menuBIzqServiciosContainer{
+  overflow-x: scroll;
+  height: 60%;
+  text-align: center;
+  width: 80%;
+  overflow: auto;
+  scroll-snap-points-y: repeat(100%);
+  scroll-snap-type: mandatory;
+  scroll-snap-destination: 100% 0%;
+  position: absolute;
+}
+
+.menuBIzqServiciosContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.menuBIzqServiciosContainer::-webkit-scrollbar-track {
+    display: none;
+}
+
+.menuBIzqServicios{
+  height: 100%;
+}
+
+.menuBIzqServicios.big img{
+  height: 60%;
+}
+
+.hMenu{
+  margin-bottom: 50px;
+}
+
+.portafolioIcon{
+  height: 65%;
+}
+
+/* Portfolio
+---------------------------------------------------------------*/
+#portfolio{
+  top: 0;
+  position: fixed;
+  z-index: 15;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+
+.portfolio .carouselNavController{
+  text-align: center;
+}
+
+.portfolio .carouselNavController a{
+  line-height: 250px;
+}
+
+.portfolioGaleria{
+  width: 85%;
+  height: 65%;
+  margin: 0 auto;
+  margin-top: 50px;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-content:flex-start;
+}
+
+.portfolioGaleriaFoto{
+  width: 32%;
+  height: 31.5%;
+  background-color: #fac51f;
+  margin-bottom: 2.75%;
+  cursor: pointer;
+}
+
+.portfolioGaleriaFoto:nth-child(7),
+.portfolioGaleriaFoto:nth-child(8),
+.portfolioGaleriaFoto:nth-child(9){
+  margin-bottom: 0;
+}
+
+
+/* Porfolio Single
+---------------------------------------------------------------*/
+#portfolioSingle{
+  z-index: 20;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  display: none;
+}
+
+.portfolioSingle{
+  margin: 0 auto;
+  background-color: white;
+  max-width: 550px;
+  height: 90vh;
+  margin-top: 5vh;
+  position: relative;
+}
+
+.portfolioSinglecloseYellow{
+  width: 35px;
+  position: absolute;
+  right: 0;
+}
+
+.portfolio .carouselNavController{
+  height: 20%;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+
+/* Quienes Somos
+---------------------------------------------------------------*/
+
+#quienesSomos .bcg {
+  background-color: white;
+  background-image:url("../src/imgs/backgrounds/QSback.jpg");
+  background-size: 120%;
+  background-repeat: no-repeat;
+}
+
+.quienesSomosContainer {
+    width: 100%; height: 100vh;
+    position: relative;
+}
+
+.quienesSomosContainer .copy {
+
+}
+
+.quienesSomosTitle{
+  margin-bottom: 40px;
+}
+
+.quienesSomosP1{
+  margin-bottom: 40px;
+}
+
+.quienesSomosContainer button{
+  width: 250px;
+}
+
+
+/* Servicios
+---------------------------------------------------------------*/
+#servicios{
+  background-image: url("../src/imgs/backgrounds/NSback.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 110vh;
+  position: relative;
+}
+
+.servicios{
+  position: absolute;
+  bottom: 0;
+}
+
+.serviciosTop{
+  padding: 0 80px;
+  margin-bottom: 20px;
+}
+
+.serviciosBottom{
+  background-color: #f9faff;
+  padding: 70px 80px;
+}
+
+/* Servicios Especificos
+---------------------------------------------------------------*/
+.serviciosEspecificosFoto{
+  background-image: url("../src/imgs/backgrounds/FOTOback.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.serviciosEspecificosVideo{
+  background-image: url("../src/imgs/backgrounds/VIDEOback.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.serviciosEspecificosRedes{
+  background-image: url("../src/imgs/backgrounds/REDESback.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.serviciosEspecificosWebApps{
+  background-image: url("../src/imgs/backgrounds/WEBback.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.serviciosEspecificosVr{
+  background-image: url("../src/imgs/backgrounds/VRback.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.serviciosEspecificos p{
+  font-size: 18px;
+}
+
+.servicioEspecifico{
+  width: 100%;
+  padding: 100px 80px;
+  overflow: hidden;
+  position: relative;
+  bottom: 0;
+}
+
+.arrow{
+  width: 30px;
+  height: 30px;
+  margin-left: 25px;
+  display: block;
+}
+
+.arrow2{
+  display: none;
+}
+
+.servicioEspecifico:hover h3{
+  color: white;
+  transition: all 0.9s ease-out;
+}
+
+.servicioEspecifico:hover .servicioEspecificoHover{
+  border-top: 100vw solid rgba(250,197,31,0.8);
+  border-right: 100vw solid transparent;
+  transition: all 0.7s ease-out;
+}
+
+.servicioEspecifico:hover .servicioEspecificoHover.full{
+  border-top: 200vw solid rgba(250,197,31,0.8);
+  border-right: 200vw solid transparent;
+  transition: all 1s ease-out;
+}
+
+.servicioEspecificoHover{
+  position: absolute;
+  transition: all 0.7s ease-out;
+  border-top: 100px solid rgba(250,197,31,0);
+  border-right: 100px solid transparent;
+  top: 0;
+  height: 0;
+  opacity: .95;
+  left: 0;
+  width: 0;
+}
+
+.servicioEspecificoHoverr:hover{
+  background-color: rgba(250,197,31,0.8);
+}
+
+.servicioEspecificoTitulo{
+  position: relative;
+}
+
+.serviciosEspecificosRedes{
+}
+
+.serviciosEspecificosFoto,
+.serviciosEspecificosVideo,
+.serviciosEspecificosWebApps,
+.serviciosEspecificosVr{
+  width: 50%;
+}
+
+
+/* Clientes
+---------------------------------------------------------------*/
+
+#clientes{
+  width: 100vw;
+  background-image: url("../src/imgs/backgrounds/CLback.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.clientes{
+  padding: 200px 80px;
+}
+
+.clientesTitle{
+  margin-bottom: 30px;
+}
+
+.clientesP1{
+  margin-bottom: 100px;
+}
+
+.clientesTable{
+  width: 90%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.clientesTableCuadro{
+  min-height: 250px;
+  text-align: center;
+  width: 33.33%;
+  border: solid 1px white;
+  white-space: nowrap;
+}
+
+.clientesTableCuadroHelper{
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.clientesTableCuadro img{
+  width: 50%;
+  vertical-align: middle;
+}
+
+.clientesTableCuadroBig{
+  width: 80% !important;
+}
+
+/* Mail
+---------------------------------------------------------------*/
+#mail{
+  margin-bottom: 67vh;
+  background-color: black;
+  color: #3e4244;
+}
+
+.mail{
+  padding: 120px 80px;
+}
+
+.mailIzq{
+  padding-right: 40px;
+}
+
+.mailIzq h2{
+  margin-bottom: 50px;
+}
+
+.mailIzqP1{
+  margin-bottom: 20px;
+}
+
+.mailDer{
+  width: 60%;
+  padding-left: 40px;
+}
+
+
+.mailDer input,
+.mailDer textarea{
+  margin-bottom: 45px;
+  color: #79858e;
+}
+
+.mailDer input:-moz-placeholder {
+   color: #3e4244;
+}
+
+.mailDer textarea{
+  height: 200px;
+}
+
+.mailDer button,
+.mailDer a{
+  width: 50%;
+}
+
+.mailDer a{
+  font-size: 13px;
+  padding: 10px;
+  cursor: pointer;
+  color: #fac51f;
+  border: 3px solid #fac51f;
+  text-align: center;
+}
+
+#mailButtonText{
+
+}
+
+#mailLoading{
+  width: 11px;
+  display: none;
+}
+
+.mailExito{
+  background-color: #fac51f;
+  position: fixed;
+  bottom: -15vh;
+  padding: 30px 0;
+  width: 100vw;
+  text-align: center;
+  z-index: 30;
+  border-top: solid 1px #363636;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+}
+
+/* Footer
+---------------------------------------------------------------*/
+footer{
+  background-color: #fac51f;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  max-height: 70vh;
+  z-index: -2;
+}
+
+.footerIcon{
+  width: 350px;
+  position: absolute;
+  right: 0;
+}
+
+.footer{
+  padding: 120px 80px;
+  width: 100%;
+  height: 7%;
+}
+
+.footerTopWeb,
+.footerTopSocial{
+  width: 30%;
+}
+
+.footer ul{
+  margin-left: 15px;
+}
+
+.footer a{
+  color: #d4a81c;
+}
+
+.footer a:hover{
+  color: #A88413;
+}
+
+.footer a li{
+  margin-bottom: 2px;
+}
+
+.footerTopTitle{
+  margin-bottom: 20px;
+}
+
+.footerBottom{
+  border-top: 1px solid black;
+  text-align: center;
+  position: relative;
+  height: 50px;
+}
+
+.footerBottom p{
+  font-weight:400;
+  font-size: 14px;
+}
+
+.footerBottom .redesSociales{
+  position: absolute;
+  left: 0;
+  margin-left: 80px;
+  bottom: 10px;
+}
+
+
+/*---------------------------------------------------------------
+-----------------------------------------------------------------
+---------------------------- MEDIA -------------------------------
+-----------------------------------------------------------------
+---------------------------------------------------------------*/
+@media only screen and (max-width: 1100px){
+  #quienesSomos .bcg {
+    background-size: 160%;
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+  /* Clientes Media Tablet
+  ---------------------------------------------------------------*/
+  .clientesTableCuadro{
+    width: 50%;
+  }
+
+  /* Menu B Media
+  ---------------------------------------------------------------*/
+  .menuBIzqServiciosContainer {
+    height: 45%;
+}
+
+  .menuBIzqServicios h2{
+    font-size: 40px;
+  }
+
+  .portafolioIcon {
+    height: 50%;
+}
+
+.menuBIzqServicios.big img {
+    height: 50%;
+}
+
+.scrollMouse{
+  left: unset;
+}
+
+/* quienesSomos Tablet
+---------------------------------------------------------------*/
+#quienesSomos .bcg {
+  background-size: 210%;
+}
+
+  /* Mail Media Tablet
+  ---------------------------------------------------------------*/
+  #mail{
+    text-align: center;
+    margin-bottom: 65vh;
+  }
+
+  .mail{
+    padding: 80px 40px;
+  }
+
+  .mailIzq{
+    padding: 0;
+    width: 100%;
+  }
+
+  .mailIzqP2{
+    margin-bottom: 30px;
+  }
+
+  .mailDer{
+    width: 100%;
+    padding: 0;
+  }
+
+  .mailDer input{
+    text-align: center;
+  }
+
+  .mailDer button{
+    margin: 0 auto;
+  }
+
+  #mailExito{
+    bottom: -20vh;
+  }
+
+  /* Footer Media Tablet
+  ---------------------------------------------------------------*/
+  .footer{
+    padding: 100px 80px;
+    padding-bottom: 80px;
+  }
+
+  .footerIcon{
+    width: 300px;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  /* Global Media
+  ---------------------------------------------------------------*/
+  h1,
+  h2,
+  h3{
+    font-size: 36px;
+  }
+
+  h4{
+    font-size: 24;
+  }
+
+  p{
+    font-size: 18px;
+  }
+
+  .flexDirec{
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
+  /* Carousel Media
+  ---------------------------------------------------------------*/
+  .carouselSlide{
+    justify-content: end;
+    padding-bottom: 40px;
+  }
+
+  .unoC{
+    background-image: url("../src/imgs/carousel/Carousel1Mov.jpg");
+  }
+
+  .dosC{
+    background-image: url("../src/imgs/carousel/Carousel2Mov.jpg");
+  }
+
+  .tresC{
+    background-image: url("../src/imgs/carousel/Carousel3Mov.jpg");
+  }
+
+  ..cuatroC{
+    background-image: url("../src/imgs/carousel/Carousel4Mov.jpg");
+  }
+
+  .cincoC{
+    background-image: url("../src/imgs/carousel/Carousel5Mov.jpg");
+  }
+
+  /* Menu A Media
+  ---------------------------------------------------------------*/
+  .menuA{
+    padding: 0 40px;
+  }
+
+  .menuAIzq{
+    display: none;
+
+  }
+
+  #menuADer{
+    width: 100%;
+  }
+
+
+  /* Menu B Media
+  ---------------------------------------------------------------*/
+
+  #menuBIzq{
+    width: 100vw;
+    text-align: center;
+  }
+
+  .menuBIzqServiciosContainer{
+    height: 45%;
+  }
+
+  .portafolioIcon{
+    height: auto;
+    width: 55%;
+  }
+
+  .menuBIzqServicios.big img {
+    height: auto;
+    width: 90%;
+}
+
+/* Porfolio Single Media
+---------------------------------------------------------------*/
+#portfolioSingle{
+
+}
+
+.portfolioSingle{
+  width: 85%;
+  height: 80vh;
+}
+
+.portfolioSinglecloseYellow{
+
+}
+
+/* Portfolio
+---------------------------------------------------------------*/
+#portfolio{
+
+}
+
+#portfolio .closeYellow{
+  right: 40px !important;
+}
+
+.portfolio {
+  padding: 0 40px;
+}
+
+.portfolio .carouselNavController {
+    height: 15%;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.portfolioGaleria{
+  width: 100%;
+  overflow: hidden;
+  height: 70%;
+  margin-top: 90px;
+}
+
+.portfolioGaleriaFoto{
+  width: 100%;
+}
+
+.portfolioGaleriaFoto:nth-child(7),
+.portfolioGaleriaFoto:nth-child(8),
+.portfolioGaleriaFoto:nth-child(9){
+
+}
+
+
+  /* Quienes Somos Media
+  ---------------------------------------------------------------*/
+  #quienesSomos .bcg{
+    background-image: url("../src/imgs/backgrounds/QSbackmov.jpg");
+  }
+
+  #quienesSomos .copy{
+    text-align: center;
+    padding: 0 40px;
+  }
+
+  #quienesSomos button{
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  /* Servicios Media
+  ---------------------------------------------------------------*/
+  #servicios{
+    background-size: cover;
+    background-image: url("../src/imgs/backgrounds/NSbackmov.jpg");
+    text-align: center;
+
+  }
+
+  .serviciosTop{
+    padding: 0 40px;
+  }
+
+  .serviciosBottom{
+    padding: 50px 40px;
+  }
+
+  /* Servicios Especificos Media
+  ---------------------------------------------------------------*/
+#serviciosEspecificos{
+  text-align: center;
+}
+
+#serviciosEspecificos p{
+  font-size: 14px
+}
+
+  .serviciosEspecificosFoto,
+  .serviciosEspecificosVideo,
+  .serviciosEspecificosRedes,
+  .serviciosEspecificosWebApps,
+  .serviciosEspecificosVr{
+    width: 100%;
+  }
+
+  .servicioEspecificoTitulo .fy-row{
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+
+.serviciosEspecificosRedes{
+  background-position: 60% center;
+}
+
+  .servicioEspecifico{
+    padding: 50px 40px;
+    padding-bottom: 30px;
+  }
+
+  .servicioEspecifico:hover .servicioEspecificoHover,
+  .servicioEspecifico:hover .servicioEspecificoHover.full{
+    border-top: 200vw solid rgba(250,197,31,0.8);
+    border-right: 200vw solid transparent;
+    transition: all 0.7s ease-out;
+  }
+
+  .arrow{
+    display: none;
+  }
+
+  .arrow2{
+    width: 25px;
+    height: 25px;
+    display: block;
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+    margin: 0 auto;
+    margin-top:15px;
+  }
+
+  /* Clientes Media
+  ---------------------------------------------------------------*/
+  #clientes{
+    text-align: center;
+  }
+
+  .clientes{
+    padding: 100px 40px;
+  }
+
+  .clientesTable{
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .clientesTableCuadro{
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
+  /* Mail Media
+  ---------------------------------------------------------------*/
+  #mail{
+    margin-bottom: 85vh;
+  }
+
+  /* Footer Media
+  ---------------------------------------------------------------*/
+  footer{
+    text-align: center;
+    max-height: 100vh;
+    width: 100vw;
+  }
+
+  .footer{
+    padding: 90px 40px;
+  }
+
+  .footerIcon{
+    width: 100px;
+  }
+
+  .footerTopWeb, .footerTopSocial {
+    width: 100%;
+  }
+
+  .footerBottom{
+    padding: 15px 40px;
+    height: auto;
+  }
+
+  .footerBottom .redesSociales{
+    position: initial;
+    margin: 0;
+  }
+}

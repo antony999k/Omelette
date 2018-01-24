@@ -1,0 +1,304 @@
+/*=============================================================
+firefly.css v0.0.0 Beta1.1.0 Customize: Omelette
+Author: @Antony999k
+MIT License
+=============================================================*/
+
+/*--------------------------------------------------------------
+Fuentes
+--------------------------------------------------------------*/
+
+@font-face{
+   font-family: "Raleway";
+   src: url(../src/fonts/Raleway-Regular.ttf) format('truetype');
+   font-style: normal;
+   font-weight:400;
+}
+
+@font-face{
+   font-family: "Raleway";
+   src: url(../src/fonts/Raleway-Italic.ttf) format('truetype');
+   font-style: italic;
+   font-weight:400;
+}
+
+@font-face{
+   font-family: "Raleway";
+   src: url(../src/fonts/Raleway-Medium.ttf) format('truetype');
+   font-style: normal;
+   font-weight:500;
+}
+
+@font-face{
+   font-family: "Raleway";
+   src: url(../src/fonts/Raleway-MediumItalic.ttf) format('truetype');
+   font-style: italic;
+   font-weight:500;
+}
+
+@font-face{
+   font-family: "Raleway";
+   src: url(../src/fonts/Raleway-SemiBold.ttf) format('truetype');
+   font-style: normal;
+   font-weight:600;
+}
+
+@font-face{
+   font-family: "Raleway";
+   src: url(../src/fonts/Raleway-SemiBoldItalic.ttf) format('truetype');
+   font-style: italic;
+   font-weight:600;
+}
+
+@font-face{
+   font-family: "Raleway";
+   src: url(../src/fonts/Raleway-Bold.ttf) format('truetype');
+   font-style: normal;
+   font-weight:800;
+}
+
+@font-face{
+   font-family: "Raleway";
+   src: url(../src/fonts/Raleway-BoldItalic.ttf) format('truetype');
+   font-style: italic;
+   font-weight:800;
+}
+
+@font-face{
+   font-family: "Raleway";
+   src: url(../src/fonts/Raleway-Black.ttf) format('truetype');
+   font-style: normal;
+   font-weight:900;
+}
+
+@font-face{
+   font-family: "Raleway";
+   src: url(../src/fonts/Raleway-BlackItalic.ttf) format('truetype');
+   font-style: italic;
+   font-weight:900;
+}
+
+
+
+/* Editable Master
+---------------------------------------------------------------*/
+*{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Raleway", sans-serif;
+  color: #363636;
+  background-color: #fac51f;
+}
+
+::-moz-selection {
+    background: rgba(250,197,31, 0.7);
+}
+
+::selection{
+  background: rgba(250,197,31, 0.7);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-weight: 900
+}
+
+h1.white,
+h2.white,
+h3.white,
+h4.white,
+h5.white,
+h6.white,
+p.white{
+  color: white;
+}
+
+h1.yellow,
+h2.yellow,
+h3.yellow,
+h4.yellow,
+h5.yellow,
+h6.yellow,
+p.yellow{
+  color: #fac51f;
+}
+
+h1{
+  font-size: 90px;
+}
+
+h2{
+  font-size: 60px;
+}
+
+h3{
+  font-size: 48px;
+}
+
+h4{
+  font-size: 30px;
+}
+
+h5{
+  font-size: 24px;
+}
+
+h6{
+  font-size: 18px;
+}
+
+p{
+  font-size: 22px;
+  font-weight: 300;
+}
+
+p.white{
+  color: white;
+}
+
+a{
+  font-size: 24px;
+  cursor: pointer;
+}
+
+ul,
+ol,
+ol li,
+ul li{
+  font-size: 24px;
+}
+
+span{
+  color: #fac51f;
+  font-weight: 600;
+}
+
+input{
+  padding: 3px 0;
+  font-size: 18px;
+  background-color: transparent;
+  border-bottom: 1px solid #f8c206;
+}
+
+textarea{
+  padding: 5px;
+  font-size: 18px;
+  color: #3e4244;
+  background-color: transparent;
+  border: 1px solid #f8c206;
+}
+
+button{
+  font-size: 13px;
+  padding: 10px;
+  cursor: pointer;
+  color: #fac51f;
+  border: 3px solid #fac51f;
+}
+
+::-webkit-input-placeholder{
+  font-size: 18px;
+}
+:-ms-input-placeholder{
+  font-size: 18px;
+}
+::-moz-placeholder{
+  font-size: 18px;
+}
+input:-moz-placeholder {
+   font-size: 18px;
+}
+
+a{
+  color: #363636;
+  font-weight: 500;
+}
+
+a:hover{
+  transition-duration: 0.1s;
+}
+
+.lead{
+  font-weight: 200;
+  font-size: 24px;
+}
+
+
+/* Containers
+---------------------------------------------------------------*/
+.fy-container-xl,
+.fy-container-l,
+.fy-container-m,
+.fy-container-s{
+  margin: 0 auto;
+  padding: 0 80px;
+  height: 100%;
+}
+
+.fy-container-xl{
+  max-width: 1500px;
+}
+
+.fy-container-l{
+  max-width: 1160px;
+}
+
+.fy-container-m{
+  max-width: 1040px;
+}
+
+.fy-container-s{
+  max-width: 645px;
+}
+
+
+/* Rows & Columns
+---------------------------------------------------------------*/
+.fy-row,
+.fy-rowVertical{
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  justify-content:flex-start;
+
+}
+
+.fy-row{
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+.fy-rowVertical{
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.fy-row-chid{
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+/* Accommodating elements */
+.fy-row-centerVertical{
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.fy-row-centerHorizontal{
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.fy-row-centerMid{
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
